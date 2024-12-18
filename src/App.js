@@ -2,13 +2,13 @@ import "./App.css";
 import "@google/model-viewer/dist/model-viewer.min.js";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import ProductList from "./components/ProductList/ProductList";
-import About from "./components/About/About";
+// import About from "./components/About/About";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
-import Contact from "./components/Contact/Contact";
+// import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import SignUp from "./components/SignUp/SignUp";
-import SignIn from "./components/SignIn/Signin";
+// import SignUp from "./components/SignUp/SignUp";
+// import SignIn from "./components/SignIn/Signin";
 import WishList from "./components/Wishlist/WishList";
 import { useState } from "react";
 
@@ -37,16 +37,16 @@ const App = () => {
               />
             }
           />
-          <Route path="/sign-in" element={<SignIn />} />
-          <Route path="/sign-up" element={<SignUp />} />
+          {/* <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/sign-up" element={<SignUp />} /> */}
           <Route
             path="/wishlist"
             element={
               <WishList wishlist={wishlist} onRemoveItem={handleRemoveItem} />
             }
           />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/about" element={<About />} /> */}
+          {/* <Route path="/contact" element={<Contact />} /> */}
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />

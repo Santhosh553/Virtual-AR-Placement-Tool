@@ -5,7 +5,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="contact" id="contact">
-      <div className="main-content">
+      {/* <div className="main-content">
         <div class="contact-content">
           <Link to="/"> Home </Link>
           <Link
@@ -47,9 +47,9 @@ function Footer() {
             Twitter
           </Link>
         </div>
-      </div>
+      </div> */}
 
-      <div class="action">
+      {/* <div class="action">
         <form onSubmit={(event) => event.preventDefault()}>
           <input
             type="email"
@@ -60,7 +60,7 @@ function Footer() {
           <input type="submit" name="submit" value="Submit" required></input>
         
         </form>
-      </div>
+      </div> */}
       <div class="last">
         <p>@ 2025 Virtual AR Placement Tool</p>
       </div>

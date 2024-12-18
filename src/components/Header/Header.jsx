@@ -6,10 +6,10 @@ const Header = () => {
   const navigationLinks = [
     { label: "Home", Path: "/" },
     { label:"WishList" ,Path:"/wishlist"},
-    { label: "About", Path: "/about" },
-    { label: "Contact", Path: "/contact" },
-    { label: "SignIn", Path: "/sign-in" },
-    { label: "SignUp", Path: "/sign-up" },
+    // { label: "About", Path: "/about" },
+    // { label: "Contact", Path: "/contact" },
+    // { label: "SignIn", Path: "/sign-in" },
+    // { label: "SignUp", Path: "/sign-up" },
   ];
   const [showMobileSidebar, setShowMobileSidebar] = useState(true);
   const handleItemClick = () => {
