@@ -1,15 +1,8 @@
 import "./About.css";
-import ContributorSection from './ContributorSection';
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import tick from './tick.png';
-import archery from './archery.png';
 import gun from './rightimg3.png'
 import img1 from './prob1.jpg'
 import img2 from './prob2.jpg'
-import res1 from './resource1.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope , faArrowUp} from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
     useEffect(() => {
