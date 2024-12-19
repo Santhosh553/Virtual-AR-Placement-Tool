@@ -11,6 +11,7 @@ import OfficeChairUsdz from "../assets/models/OfficeChair.usdz";
 import pot from "../assets/models/pot.glb";
 import potUsdz from "../assets/models/pot.usdz";
 import iphone16 from "../assets/models/iphone16.glb";
+import iosiphone16 from "../assets/models/iphone16.usdz";
 
 const productItems = [
   {
@@ -160,7 +161,7 @@ const productItems = [
     id: 7,
     name: "IPhone 16",
     modelSrc: iphone16,
-    iOSSrc: iphone16,
+    iOSSrc: iosiphone16,
     category: "Electronics",
     color: "Teal",
     annotations: [
