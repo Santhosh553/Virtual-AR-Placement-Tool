@@ -2,7 +2,7 @@ import "./App.css";
 import "@google/model-viewer/dist/model-viewer.min.js";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import ProductList from "./components/ProductList/ProductList";
-// import About from "./components/About/About";
+import About from "./components/About/About";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 // import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -45,7 +45,7 @@ const App = () => {
               <WishList wishlist={wishlist} onRemoveItem={handleRemoveItem} />
             }
           />
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/about" element={<About />} />
           {/* <Route path="/contact" element={<Contact />} /> */}
           <Route path="*" element={<ErrorPage />} />
         </Routes>
