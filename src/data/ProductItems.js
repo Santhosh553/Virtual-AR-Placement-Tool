@@ -12,10 +12,37 @@ import pot from "../assets/models/pot.glb";
 import potUsdz from "../assets/models/pot.usdz";
 import iphone16 from "../assets/models/iphone16.glb";
 import iosiphone16 from "../assets/models/iphone16.usdz";
+import officetable from "../assets/models/office_table_desk.glb";
+import iosofficetable from "../assets/models/office_table_desk.usdz";
 
 const productItems = [
   {
     id: 1,
+    name: "Office Table Desk",
+    modelSrc: officetable,
+    iOSSrc: iosofficetable,
+    category: "Furniture",
+    color: "Orange",
+    annotations: [
+      {
+        title: "Spacious Work Surface",
+        slot: "hotspot-1",
+        position: "0.011597651675006926m 0.5744572599492905m -0.1383899854988515m",
+        normal: "0.028332494851243895m 0.2137467602998606m 0.9764781575625839m",
+        orbit: "10.89188deg 119.9775deg 0.03543022m",
+        target: "-0.1053838m 0.01610652m 0.1076345m"
+      }, {
+        title: "Storage Drawer",
+        slot: "hotspot-2",
+        position: "0.118754174027053235m 0.3513235856998005m 0.8658749505478343m",
+        normal: "-0.30988561688489596m 0.9507625837296717m -0.004627507703580716m",
+        orbit: "10.89188deg 119.9775deg 0.03543022m",
+        target: "-0.1053838m 0.01610652m 0.1076345m"
+      },
+    ]
+  },
+  {
+    id: 2,
     name: "Sheen Chair",
     modelSrc: sheenchair,
     iOSSrc: ioschair,
@@ -40,7 +67,7 @@ const productItems = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     name: "Office Chair",
     modelSrc: OfficeChair,
     iOSSrc: OfficeChairUsdz,
@@ -65,7 +92,7 @@ const productItems = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     name: "pot",
     modelSrc: pot,
     iOSSrc: potUsdz,
@@ -83,7 +110,7 @@ const productItems = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     name: "Painting",
     modelSrc: painting,
     iOSSrc: iospainting,
@@ -108,7 +135,7 @@ const productItems = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     name: "Car",
     modelSrc: car,
     iOSSrc: ioscar,
@@ -133,7 +160,7 @@ const productItems = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     name: "Sport Car",
     modelSrc: car1,
     iOSSrc: ioscar1,
@@ -158,7 +185,7 @@ const productItems = [
     ]
   },
   {
-    id: 7,
+    id: 8,
     name: "IPhone 16",
     modelSrc: iphone16,
     iOSSrc: iosiphone16,
