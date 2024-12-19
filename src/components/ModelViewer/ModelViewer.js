@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import LazyLoad from "react-lazyload";
-// import "../../Products/ProductList.css";
 import QRCode from "qrcode.react";
 import Help from "./Help";
 const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
@@ -24,7 +23,7 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
   const model = useRef();
 
   // Accessing varient selections element
-  const varient = useRef(null);
+  // const varient = useRef(null);
 
   console.log(item)
 
@@ -54,33 +53,6 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
     ) {
       setARSupported(true);
     }
-  }, []);
-
-  useEffect(() => {
-    // set up event listeners
-    const modelViewer = model.current
-    modelViewer &&
-    modelViewer.addEventListener('load', () => {
-      console.log('loaded')
-      const availableVariants = modelViewer?.availableVariants;
-      console.log(availableVariants)
-      for (const variant of availableVariants) {
-        const option = document.createElement('option');
-        option.value = variant;
-        option.textContent = variant;
-        varient?.current?.appendChild(option);
-      }
-
-      // Adding a default option
-      const defaultOption = document.createElement('option');
-      defaultOption.value = 'Default';
-      defaultOption.textContent = 'Default';
-      varient?.current?.appendChild(defaultOption);
-    });
-
-    varient?.current?.addEventListener('input', (event) => {
-      modelViewer.variantName = event.target.value === 'Default' ? null : event.target.value;
-    });
   }, []);
    
   useEffect(() => {
@@ -162,9 +134,7 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
           </button>
         ))}
         
-        <div class="controls variant_div">
-          <select ref={varient} id="variant"></select>
-        </div>
+        
 
       </model-viewer>
         
