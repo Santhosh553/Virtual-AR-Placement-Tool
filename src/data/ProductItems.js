@@ -10,6 +10,7 @@ import OfficeChair from "../assets/models/OfficeChair.glb";
 import OfficeChairUsdz from "../assets/models/OfficeChair.usdz";
 import pot from "../assets/models/pot.glb";
 import potUsdz from "../assets/models/pot.usdz";
+import iphone16 from "../assets/models/iphone16.glb";
 
 const productItems = [
   {
@@ -155,6 +156,31 @@ const productItems = [
       },
     ]
   },
-  
+  {
+    id: 7,
+    name: "IPhone 16",
+    modelSrc: iphone16,
+    iOSSrc: iphone16,
+    category: "Electronics",
+    color: "Teal",
+    annotations: [
+        {
+            title: "teal-body",
+            slot: "hotspot-1",
+            position: "1.010m 0.300m -0.100m",
+            normal: "0.250m 0.300m 0.920m",
+            orbit: "15.000deg 105.000deg 0.040m",
+            target: "-0.080m 0.015m 0.050m"
+        },
+        {
+            title: "camera-module",
+            slot: "hotspot-2",
+            position: "2.005m 4.500m 3.190m", 
+            normal: "-0.300m 0.950m -0.005m",
+            orbit: "20.000deg 110.000deg 0.045m",
+            target: "-0.085m 0.020m 0.065m"
+        },
+    ]
+},
 ];
 export default productItems;
